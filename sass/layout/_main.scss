@@ -1,0 +1,74 @@
+main{
+    width: 100%;
+    max-width: $width-body;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    figure{
+        margin: 0;
+        img{
+        max-height: (758px/$width-body)*100vw;
+        width: auto;
+        max-width: 536px;
+        box-shadow: 0 0 15px rgb(225, 225, 225);
+        }
+    }
+}
+#note{
+    grid-area: 1/1/2/2;
+    @media screen and (min-width: $width-body){
+       margin: 99px 51px 47px 162px;     
+    }
+    margin: (99px/$width-body)*100vw (51px/$width-body)*100vw (47px/$width-body)*100vw (162px/$width-body)*100vw;
+    
+}
+#chic{
+    grid-area: 1/2/2/3;
+    @media screen and (min-width: $width-body){
+        padding: 99px 162px 47px 51px;     
+     }
+    padding: (99px/$width-body)*100vw (162px/$width-body)*100vw (47px/$width-body)*100vw (51px/$width-body)*100vw;
+}
+#delice{
+    grid-area: 2/1/3/2;
+    @media screen and (min-width: $width-body){
+        padding: 47px 51px 84px 162px;     
+     }
+    padding: (47px/$width-body)*100vw (51px/$width-body)*100vw (84px/$width-body)*100vw (162px/$width-body)*100vw;
+}
+#palette{
+    grid-area: 2/2/3/3;
+    @media screen and (min-width: $width-body){
+        padding: 47px 162px 84px 51px;     
+     }
+    padding: (47px/$width-body)*100vw (162px/$width-body)*100vw (84px/$width-body)*100vw (51px/$width-body)*100vw;
+}
+aside{
+    grid-area: 3/1/4/3;
+    display:flex;
+    justify-content: center;
+    .next{
+        @media screen and (min-width: $width-body){
+            width: 654px;
+            height: 118px;
+            margin-bottom: 84px;
+            border-radius: 20px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: (654px/$width-body)*100vw;
+        height: (118px/$width-body)*100vw;
+        background-color: $color-back;
+        margin-bottom: (84px/$width-body)*100vw;
+        border-radius: (20px/$width-body)*100vw;
+        p{
+            @media screen and (min-width: $width-body){
+                font-size: 60px;
+            } 
+            color: $color-title;
+            font-size: 4vw;
+            margin: 0;
+        }
+    }
+}

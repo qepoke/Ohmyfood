@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "P3_ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qepoke/ohmyfood.git"
+  },
+  "author": "qepoke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qepoke/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/qepoke/ohmyfood/index.html"
+}
