@@ -1,13 +1,18 @@
 footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
     background-color: $color-back;
     width: 100%;
+    max-width: 1500px;
     height: (136px/$width-body)*100vw;
     max-height: 136px;
     border-top: (2px/$width-body)*100vw solid $color-border;
     nav{
+        width: 100%;
         display: flex;
-        justify-content: space-between; /*horizontal*/
-        align-content: center; /*vertical*/
+        justify-content: space-between;
+        align-self: center; /*horizontal*/
         margin-left: (42px/$width-body)*100vw;
         margin-right: (42px/$width-body)*100vw;
         h2{

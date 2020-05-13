@@ -5,14 +5,21 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
     figure{
-        margin: 0;
-        img{
-        max-height: (758px/$width-body)*100vw;
+        display:flex;
+        max-height: 758px;
+        height: (758px/$width-body)*100vw;
         width: auto;
         max-width: 536px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         box-shadow: 0 0 15px rgb(225, 225, 225);
+        h4{
+            padding-top: 10%;
         }
     }
+
+
 }
 #note{
     grid-area: 1/1/2/2;
@@ -20,14 +27,50 @@ main{
        margin: 99px 51px 47px 162px;     
     }
     margin: (99px/$width-body)*100vw (51px/$width-body)*100vw (47px/$width-body)*100vw (162px/$width-body)*100vw;
-    
+    figure{
+        background-color: $color-note;
+        img{
+            background-color: $color-note;
+            height: 2.8vw;
+            max-height: 100px;
+            width: auto;
+        }
+        h3{
+            font-family: 'Devonshire', cursive;
+            font-size: 2.8vw;
+            font-weight: 300;
+            color: #3d1319;
+        }
+        h4{
+            font-family: "Segoe Print";
+            font-size: 3vw;
+            color: #3d1319;
+            
+        }
+    }    
 }
+
 #chic{
     grid-area: 1/2/2/3;
     @media screen and (min-width: $width-body){
         padding: 99px 162px 47px 51px;     
      }
     padding: (99px/$width-body)*100vw (162px/$width-body)*100vw (47px/$width-body)*100vw (51px/$width-body)*100vw;
+    figure{
+        background-color: $color-chic;
+    }
+    h3{
+        font-family: 'Croissant One', cursive;
+        font-size: 2vw;
+        font-weight: 300;
+        background: linear-gradient(143deg, rgba(198,116,18,1) 0%, rgba(165,103,153,1) 60%, rgba(110,76,204,1) 99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h4{
+        color: #c67412;
+        font-size: 3vw;
+    }
 }
 #delice{
     grid-area: 2/1/3/2;
@@ -35,6 +78,23 @@ main{
         padding: 47px 51px 84px 162px;     
      }
     padding: (47px/$width-body)*100vw (51px/$width-body)*100vw (84px/$width-body)*100vw (162px/$width-body)*100vw;
+    figure{
+        background-color: $color-delice;
+    }
+    h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3vw;
+        background: linear-gradient(113deg, rgba(2,40,221,1) 25%, rgba(8,135,251,1) 67%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+    h4{
+        font-family: "SegoePrint";
+        color: #0887fb;
+        font-size: 3vw;
+    }
+
 }
 #palette{
     grid-area: 2/2/3/3;
@@ -42,6 +102,21 @@ main{
         padding: 47px 162px 84px 51px;     
      }
     padding: (47px/$width-body)*100vw (162px/$width-body)*100vw (84px/$width-body)*100vw (51px/$width-body)*100vw;
+    figure{
+        background-color: $color-palette;
+    }
+    h3{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3vw;
+        background: linear-gradient(113deg, rgba(65,150,60,1) 17%, rgba(184,250,124,1) 59%); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h4{
+        font-family: "SegoePrint";
+        color: #72bf56;
+        font-size: 3vw;
+    }
 }
 aside{
     grid-area: 3/1/4/3;
@@ -51,7 +126,7 @@ aside{
         @media screen and (min-width: $width-body){
             width: 654px;
             height: 118px;
-            margin-bottom: 84px;
+            margin-bottom: 220px;
             border-radius: 20px;
         }
         display: flex;
@@ -60,7 +135,7 @@ aside{
         width: (654px/$width-body)*100vw;
         height: (118px/$width-body)*100vw;
         background-color: $color-back;
-        margin-bottom: (84px/$width-body)*100vw;
+        margin-bottom: (220px/$width-body)*100vw;
         border-radius: (20px/$width-body)*100vw;
         p{
             @media screen and (min-width: $width-body){

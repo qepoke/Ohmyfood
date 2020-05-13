@@ -1,5 +1,6 @@
-body {
-  font-family: Montserrate;
+h1, h2, h3, h4, img, figure, p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,9 +12,25 @@ body {
   font-family: "Montserrat", serif;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  color: #fdcb46;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+}
+
+#note_b, #chic_b, #delice_b, #palette_b {
+  width: 1750px;
+  height: 900px;
+  grid-area: 1/4/1/4;
+}
+
 header {
-  display: grid;
-  /*Pour pouvoir centrer verticalement le h1*/
+  display: flex;
   background-color: #579c87;
   width: 100%;
   height: 16.2vw;
@@ -24,12 +41,8 @@ header h1 {
   font-size: 6vw;
   color: #fdcb46;
   letter-spacing: -2px;
-  margin: 0;
-  text-align: center;
-  justify-self: center;
-  /*horizontal*/
+  margin: auto;
   align-self: center;
-  /*vertical*/
 }
 @media screen and (min-width: 1500px) {
   header h1 {
@@ -45,13 +58,18 @@ main {
   grid-template-rows: 1fr 1fr auto;
 }
 main figure {
-  margin: 0;
-}
-main figure img {
-  max-height: 50.5333333333vw;
+  display: flex;
+  max-height: 758px;
+  height: 50.5333333333vw;
   width: auto;
   max-width: 536px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   box-shadow: 0 0 15px #e1e1e1;
+}
+main figure h4 {
+  padding-top: 10%;
 }
 
 #note {
@@ -63,6 +81,26 @@ main figure img {
     margin: 99px 51px 47px 162px;
   }
 }
+#note figure {
+  background-color: #fcdfdb;
+}
+#note figure img {
+  background-color: #fcdfdb;
+  height: 2.8vw;
+  max-height: 100px;
+  width: auto;
+}
+#note figure h3 {
+  font-family: "Devonshire", cursive;
+  font-size: 2.8vw;
+  font-weight: 300;
+  color: #3d1319;
+}
+#note figure h4 {
+  font-family: "Segoe Print";
+  font-size: 3vw;
+  color: #3d1319;
+}
 
 #chic {
   grid-area: 1/2/2/3;
@@ -72,6 +110,21 @@ main figure img {
   #chic {
     padding: 99px 162px 47px 51px;
   }
+}
+#chic figure {
+  background-color: #fff5fe;
+}
+#chic h3 {
+  font-family: "Croissant One", cursive;
+  font-size: 2vw;
+  font-weight: 300;
+  background: linear-gradient(143deg, #c67412 0%, #a56799 60%, #6e4ccc 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#chic h4 {
+  color: #c67412;
+  font-size: 3vw;
 }
 
 #delice {
@@ -83,6 +136,21 @@ main figure img {
     padding: 47px 51px 84px 162px;
   }
 }
+#delice figure {
+  background-color: #edefef;
+}
+#delice h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3vw;
+  background: linear-gradient(113deg, #0228dd 25%, #0887fb 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#delice h4 {
+  font-family: "SegoePrint";
+  color: #0887fb;
+  font-size: 3vw;
+}
 
 #palette {
   grid-area: 2/2/3/3;
@@ -92,6 +160,21 @@ main figure img {
   #palette {
     padding: 47px 162px 84px 51px;
   }
+}
+#palette figure {
+  background-color: #fdfffd;
+}
+#palette h3 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3vw;
+  background: linear-gradient(113deg, #41963c 17%, #b8fa7c 59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#palette h4 {
+  font-family: "SegoePrint";
+  color: #72bf56;
+  font-size: 3vw;
 }
 
 aside {
@@ -106,14 +189,14 @@ aside .next {
   width: 43.6vw;
   height: 7.8666666667vw;
   background-color: #579c87;
-  margin-bottom: 5.6vw;
+  margin-bottom: 14.6666666667vw;
   border-radius: 1.3333333333vw;
 }
 @media screen and (min-width: 1500px) {
   aside .next {
     width: 654px;
     height: 118px;
-    margin-bottom: 84px;
+    margin-bottom: 220px;
     border-radius: 20px;
   }
 }
@@ -129,18 +212,22 @@ aside .next p {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
   background-color: #579c87;
   width: 100%;
+  max-width: 1500px;
   height: 9.0666666667vw;
   max-height: 136px;
   border-top: 0.1333333333vw solid #a1c181;
 }
 footer nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   /*horizontal*/
-  align-content: center;
-  /*vertical*/
   margin-left: 2.8vw;
   margin-right: 2.8vw;
 }
