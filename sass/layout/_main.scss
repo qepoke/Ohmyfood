@@ -29,8 +29,8 @@ main{
         text-align: center;
         box-shadow: 0 0 15px rgb(225, 225, 225);
         @include mobile{
-            height: (900px/$width-body)*100vw;
-            width: (636px/$width-body)*100vw;
+            height: (1200px/$width-body)*100vw;
+            width: (848px/$width-body)*100vw;
         }
         h2{
             width: 25vw;
