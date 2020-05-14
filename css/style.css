@@ -4,10 +4,10 @@ h1, h2, h3, h4, img, figure, p {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 1500px;
   height: 100%;
-  max-height: 2388px;
   margin: auto;
   font-family: "Montserrat", serif;
 }
@@ -33,8 +33,9 @@ header {
   display: flex;
   background-color: #579c87;
   width: 100%;
+  max-width: 100%;
   height: 16.2vw;
-  max-height: 243px;
+  max-height: 104.8666666667px;
   border-bottom: 0.1333333333vw solid #a1c181;
 }
 header h1 {
@@ -44,77 +45,97 @@ header h1 {
   margin: auto;
   align-self: center;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1100px) {
   header h1 {
-    font-size: 90px;
+    font-size: 66px;
   }
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
   width: 100%;
   max-width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr auto;
+}
+main .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 6.6vw 10.8vw 5.6vw 10.8vw;
+}
+@media screen and (max-width: 500px) {
+  main .menu {
+    flex-direction: column;
+    align-content: center;
+  }
 }
 main figure {
   display: flex;
-  max-height: 758px;
   height: 50.5333333333vw;
-  width: auto;
-  max-width: 536px;
+  width: 35.7333333333vw;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 0 0 15px #e1e1e1;
 }
-main figure h4 {
+@media screen and (min-width: 1100px) {
+  main figure {
+    max-height: 555.8666666667px;
+    max-width: 393.0666666667px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main figure {
+    height: 60vw;
+    width: 42.4vw;
+  }
+}
+main figure h2 {
+  width: 25vw;
+  font-size: 3vw;
+}
+main figure h3 {
   padding-top: 10%;
+  font-size: 3vw;
 }
 
 #note {
-  grid-area: 1/1/2/2;
-  margin: 6.6vw 3.4vw 3.1333333333vw 10.8vw;
-}
-@media screen and (min-width: 1500px) {
-  #note {
-    margin: 99px 51px 47px 162px;
-  }
+  margin-bottom: 6.2666666667vw;
 }
 #note figure {
   background-color: #fcdfdb;
 }
-#note figure img {
-  background-color: #fcdfdb;
-  height: 2.8vw;
-  max-height: 100px;
-  width: auto;
+#note figure span {
+  font-size: 5vw;
+  background: linear-gradient(90deg, #f04d5f 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-#note figure h3 {
+#note figure h2 {
   font-family: "Devonshire", cursive;
-  font-size: 2.8vw;
   font-weight: 300;
   color: #3d1319;
 }
-#note figure h4 {
+#note figure h3 {
   font-family: "Segoe Print";
-  font-size: 3vw;
   color: #3d1319;
+}
+@media screen and (max-width: 500px) {
+  #note figure {
+    padding: 0;
+  }
 }
 
 #chic {
-  grid-area: 1/2/2/3;
-  padding: 6.6vw 10.8vw 3.1333333333vw 3.4vw;
-}
-@media screen and (min-width: 1500px) {
-  #chic {
-    padding: 99px 162px 47px 51px;
-  }
+  margin-bottom: 6.2666666667vw;
 }
 #chic figure {
   background-color: #fff5fe;
 }
-#chic h3 {
+#chic h2 {
   font-family: "Croissant One", cursive;
   font-size: 2vw;
   font-weight: 300;
@@ -122,65 +143,54 @@ main figure h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#chic h4 {
+#chic h3 {
   color: #c67412;
   font-size: 3vw;
 }
 
 #delice {
-  grid-area: 2/1/3/2;
-  padding: 3.1333333333vw 3.4vw 5.6vw 10.8vw;
-}
-@media screen and (min-width: 1500px) {
-  #delice {
-    padding: 47px 51px 84px 162px;
-  }
+  margin-bottom: 6.2666666667vw;
 }
 #delice figure {
   background-color: #edefef;
 }
-#delice h3 {
+#delice h2 {
   font-family: "Dancing Script", cursive;
   font-size: 3vw;
   background: linear-gradient(113deg, #0228dd 25%, #0887fb 67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#delice h4 {
+#delice h3 {
   font-family: "SegoePrint";
   color: #0887fb;
   font-size: 3vw;
 }
 
 #palette {
-  grid-area: 2/2/3/3;
-  padding: 3.1333333333vw 10.8vw 5.6vw 3.4vw;
-}
-@media screen and (min-width: 1500px) {
-  #palette {
-    padding: 47px 162px 84px 51px;
-  }
+  margin-bottom: 6.2666666667vw;
 }
 #palette figure {
   background-color: #fdfffd;
 }
-#palette h3 {
+#palette h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 3vw;
   background: linear-gradient(113deg, #41963c 17%, #b8fa7c 59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#palette h4 {
+#palette h3 {
   font-family: "SegoePrint";
   color: #72bf56;
   font-size: 3vw;
 }
 
 aside {
-  grid-area: 3/1/4/3;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 aside .next {
   display: flex;
@@ -192,11 +202,11 @@ aside .next {
   margin-bottom: 14.6666666667vw;
   border-radius: 1.3333333333vw;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1100px) {
   aside .next {
-    width: 654px;
-    height: 118px;
-    margin-bottom: 220px;
+    width: 480px;
+    height: 87px;
+    margin-bottom: 160px;
     border-radius: 20px;
   }
 }
@@ -205,21 +215,22 @@ aside .next p {
   font-size: 4vw;
   margin: 0;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1100px) {
   aside .next p {
-    font-size: 60px;
+    font-size: 35px;
   }
 }
 
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   display: flex;
   background-color: #579c87;
   width: 100%;
-  max-width: 1500px;
+  max-width: 100vw;
   height: 9.0666666667vw;
-  max-height: 136px;
+  max-height: 75px;
   border-top: 0.1333333333vw solid #a1c181;
 }
 footer nav {
@@ -234,9 +245,9 @@ footer nav {
 footer nav h2 {
   font-size: 3vw;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1100px) {
   footer nav h2 {
-    font-size: 45px;
+    font-size: 25px;
   }
 }
 footer nav h2 a {

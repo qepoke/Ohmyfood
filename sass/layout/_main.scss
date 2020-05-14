@@ -1,65 +1,79 @@
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
     width: 100%;
     max-width: $width-body;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    .menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: (99px/$width-body)*100vw (162px/$width-body)*100vw (84px/$width-body)*100vw (162px/$width-body)*100vw;
+    @include mobile{
+        flex-direction: column;
+        align-content: center;
+    }
+    }
     figure{
+        @include large{
+            max-height: (758px*$large)/$width-body;
+            max-width: (536px*$large)/$width-body;
+        }
         display:flex;
-        max-height: 758px;
         height: (758px/$width-body)*100vw;
-        width: auto;
-        max-width: 536px;
+        width: (536px/$width-body)*100vw;
         align-items: center;
         justify-content: center;
         text-align: center;
         box-shadow: 0 0 15px rgb(225, 225, 225);
-        h4{
-            padding-top: 10%;
+        @include mobile{
+            height: (900px/$width-body)*100vw;
+            width: (636px/$width-body)*100vw;
         }
-    }
-
-
-}
-#note{
-    grid-area: 1/1/2/2;
-    @media screen and (min-width: $width-body){
-       margin: 99px 51px 47px 162px;     
-    }
-    margin: (99px/$width-body)*100vw (51px/$width-body)*100vw (47px/$width-body)*100vw (162px/$width-body)*100vw;
-    figure{
-        background-color: $color-note;
-        img{
-            background-color: $color-note;
-            height: 2.8vw;
-            max-height: 100px;
-            width: auto;
+        h2{
+            width: 25vw;
+            font-size: 3vw;
         }
         h3{
+            padding-top: 10%;
+            font-size: 3vw;
+        }
+    }
+}
+#note{
+    margin-bottom: (94px/$width-body)*100vw;
+    figure{
+        background-color: $color-note;
+        span{
+            font-size: 5vw;
+            background: linear-gradient(90deg, rgba(240,77,95,1) 0%, rgba(246,145,106,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2{
             font-family: 'Devonshire', cursive;
-            font-size: 2.8vw;
             font-weight: 300;
             color: #3d1319;
         }
-        h4{
+        h3{
             font-family: "Segoe Print";
-            font-size: 3vw;
             color: #3d1319;
             
         }
-    }    
+    @include mobile{
+        padding: 0;
+    }
+    }   
 }
 
 #chic{
-    grid-area: 1/2/2/3;
-    @media screen and (min-width: $width-body){
-        padding: 99px 162px 47px 51px;     
-     }
-    padding: (99px/$width-body)*100vw (162px/$width-body)*100vw (47px/$width-body)*100vw (51px/$width-body)*100vw;
+    margin-bottom: (94px/$width-body)*100vw;
     figure{
         background-color: $color-chic;
     }
-    h3{
+    h2{
         font-family: 'Croissant One', cursive;
         font-size: 2vw;
         font-weight: 300;
@@ -67,21 +81,17 @@ main{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    h4{
+    h3{
         color: #c67412;
         font-size: 3vw;
     }
 }
 #delice{
-    grid-area: 2/1/3/2;
-    @media screen and (min-width: $width-body){
-        padding: 47px 51px 84px 162px;     
-     }
-    padding: (47px/$width-body)*100vw (51px/$width-body)*100vw (84px/$width-body)*100vw (162px/$width-body)*100vw;
+    margin-bottom: (94px/$width-body)*100vw;
     figure{
         background-color: $color-delice;
     }
-    h3{
+    h2{
         font-family: 'Dancing Script', cursive;
         font-size: 3vw;
         background: linear-gradient(113deg, rgba(2,40,221,1) 25%, rgba(8,135,251,1) 67%);
@@ -89,44 +99,40 @@ main{
         -webkit-text-fill-color: transparent;
 
     }
-    h4{
+    h3{
         font-family: "SegoePrint";
         color: #0887fb;
         font-size: 3vw;
     }
-
 }
 #palette{
-    grid-area: 2/2/3/3;
-    @media screen and (min-width: $width-body){
-        padding: 47px 162px 84px 51px;     
-     }
-    padding: (47px/$width-body)*100vw (162px/$width-body)*100vw (84px/$width-body)*100vw (51px/$width-body)*100vw;
-    figure{
+    margin-bottom: (94px/$width-body)*100vw;
+     figure{
         background-color: $color-palette;
     }
-    h3{
+    h2{
         font-family: 'Kaushan Script', cursive;
         font-size: 3vw;
         background: linear-gradient(113deg, rgba(65,150,60,1) 17%, rgba(184,250,124,1) 59%); 
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    h4{
+    h3{
         font-family: "SegoePrint";
         color: #72bf56;
         font-size: 3vw;
     }
 }
 aside{
-    grid-area: 3/1/4/3;
-    display:flex;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    width: 100%;
     .next{
-        @media screen and (min-width: $width-body){
-            width: 654px;
-            height: 118px;
-            margin-bottom: 220px;
+        @include large{
+            width: 480px;
+            height: 87px;
+            margin-bottom: 160px;
             border-radius: 20px;
         }
         display: flex;
@@ -138,8 +144,8 @@ aside{
         margin-bottom: (220px/$width-body)*100vw;
         border-radius: (20px/$width-body)*100vw;
         p{
-            @media screen and (min-width: $width-body){
-                font-size: 60px;
+            @include large{
+                font-size: 35px;
             } 
             color: $color-title;
             font-size: 4vw;
