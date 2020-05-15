@@ -57,7 +57,6 @@ main {
   justify-content: center;
   align-content: space-between;
   width: 100%;
-  max-width: 1500px;
 }
 main .menu {
   display: flex;
@@ -65,6 +64,12 @@ main .menu {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 6.6vw 10.8vw 5.6vw 10.8vw;
+}
+@media screen and (min-width: 1100px) {
+  main .menu {
+    margin: 4.6666666667vw auto 2vw auto;
+    justify-content: space-around;
+  }
 }
 @media screen and (max-width: 500px) {
   main .menu {
@@ -83,8 +88,8 @@ main figure {
 }
 @media screen and (min-width: 1100px) {
   main figure {
-    max-height: 555.8666666667px;
-    max-width: 393.0666666667px;
+    height: 40vw;
+    width: 28.2666666667vw;
   }
 }
 @media screen and (max-width: 500px) {
@@ -94,12 +99,28 @@ main figure {
   }
 }
 main figure h2 {
-  width: 25vw;
+  width: 35vw;
   font-size: 3vw;
+}
+@media screen and (min-width: 1100px) {
+  main figure h2 {
+    width: 28.2666666667vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  main figure h2 {
+    width: 55vw;
+    font-size: 4.5vw;
+  }
 }
 main figure h3 {
   padding-top: 10%;
   font-size: 3vw;
+}
+@media screen and (max-width: 500px) {
+  main figure h3 {
+    font-size: 5vw;
+  }
 }
 
 #note {
@@ -114,6 +135,11 @@ main figure h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 500px) {
+  #note figure span {
+    font-size: 8vw;
+  }
+}
 #note figure h2 {
   font-family: "Devonshire", cursive;
   font-weight: 300;
@@ -122,11 +148,6 @@ main figure h3 {
 #note figure h3 {
   font-family: "Segoe Print";
   color: #3d1319;
-}
-@media screen and (max-width: 500px) {
-  #note figure {
-    padding: 0;
-  }
 }
 
 #chic {
@@ -137,15 +158,19 @@ main figure h3 {
 }
 #chic h2 {
   font-family: "Croissant One", cursive;
-  font-size: 2vw;
   font-weight: 300;
   background: linear-gradient(143deg, #c67412 0%, #a56799 60%, #6e4ccc 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2.3vw;
+}
+@media screen and (max-width: 500px) {
+  #chic h2 {
+    font-size: 3vw;
+  }
 }
 #chic h3 {
   color: #c67412;
-  font-size: 3vw;
 }
 
 #delice {
@@ -156,7 +181,6 @@ main figure h3 {
 }
 #delice h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 3vw;
   background: linear-gradient(113deg, #0228dd 25%, #0887fb 67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,18 +188,22 @@ main figure h3 {
 #delice h3 {
   font-family: "SegoePrint";
   color: #0887fb;
-  font-size: 3vw;
 }
 
 #palette {
   margin-bottom: 6.2666666667vw;
+}
+@media screen and (min-width: 1100px) {
+  #palette {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 #palette figure {
   background-color: #fdfffd;
 }
 #palette h2 {
   font-family: "Kaushan Script", cursive;
-  font-size: 3vw;
   background: linear-gradient(113deg, #41963c 17%, #b8fa7c 59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -183,7 +211,6 @@ main figure h3 {
 #palette h3 {
   font-family: "SegoePrint";
   color: #72bf56;
-  font-size: 3vw;
 }
 
 aside {

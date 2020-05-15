@@ -9,10 +9,11 @@ $color-palette: #fdfffd;
 $height-body: 2388px;
 $width-body: 1500px;
 
+$xlarge: 2000px;
 $large: 1100px;
 $mobile: 500px;
 
 $breakpoints: (
     mobile:$mobile,
-    large:$large
+    large:$large,
 );

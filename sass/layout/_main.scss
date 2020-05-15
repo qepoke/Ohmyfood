@@ -4,22 +4,27 @@ main{
     justify-content: center;
     align-content: space-between;
     width: 100%;
-    max-width: $width-body;
+    //max-width: $width-body;
     .menu{
+        @include large{
+            margin: (70px/$width-body)*100vw auto (30px/$width-body)*100vw auto;
+            justify-content: space-around;
+        }
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: (99px/$width-body)*100vw (162px/$width-body)*100vw (84px/$width-body)*100vw (162px/$width-body)*100vw;
-    @include mobile{
-        flex-direction: column;
-        align-content: center;
-    }
+        @include mobile{
+            flex-direction: column;
+            align-content: center;
+        }
     }
     figure{
         @include large{
-            max-height: (758px*$large)/$width-body;
-            max-width: (536px*$large)/$width-body;
+            height: (600px/$width-body)*100vw;
+            width: (424px/$width-body)*100vw;
         }
         display:flex;
         height: (758px/$width-body)*100vw;
@@ -33,12 +38,22 @@ main{
             width: (848px/$width-body)*100vw;
         }
         h2{
-            width: 25vw;
+            @include large{
+                width: (424px/$width-body)*100vw;
+            }
+            width: 35vw;
             font-size: 3vw;
+            @include mobile{
+                width: 55vw;
+                font-size: 4.5vw;
+            }
         }
         h3{
             padding-top: 10%;
             font-size: 3vw;
+            @include mobile{
+                font-size: 5vw;
+            }
         }
     }
 }
@@ -51,6 +66,9 @@ main{
             background: linear-gradient(90deg, rgba(240,77,95,1) 0%, rgba(246,145,106,1) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        @include mobile{
+            font-size: 8vw;
+        }
         }
         h2{
             font-family: 'Devonshire', cursive;
@@ -62,9 +80,6 @@ main{
             color: #3d1319;
             
         }
-    @include mobile{
-        padding: 0;
-    }
     }   
 }
 
@@ -75,15 +90,17 @@ main{
     }
     h2{
         font-family: 'Croissant One', cursive;
-        font-size: 2vw;
         font-weight: 300;
         background: linear-gradient(143deg, rgba(198,116,18,1) 0%, rgba(165,103,153,1) 60%, rgba(110,76,204,1) 99%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 2.3vw;
+        @include mobile{
+            font-size: 3vw;
+        }
     }
     h3{
         color: #c67412;
-        font-size: 3vw;
     }
 }
 #delice{
@@ -93,7 +110,6 @@ main{
     }
     h2{
         font-family: 'Dancing Script', cursive;
-        font-size: 3vw;
         background: linear-gradient(113deg, rgba(2,40,221,1) 25%, rgba(8,135,251,1) 67%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -102,17 +118,19 @@ main{
     h3{
         font-family: "SegoePrint";
         color: #0887fb;
-        font-size: 3vw;
     }
 }
 #palette{
+    @include large{
+        margin-left: auto;
+        margin-right: auto;
+    }
     margin-bottom: (94px/$width-body)*100vw;
      figure{
         background-color: $color-palette;
     }
     h2{
         font-family: 'Kaushan Script', cursive;
-        font-size: 3vw;
         background: linear-gradient(113deg, rgba(65,150,60,1) 17%, rgba(184,250,124,1) 59%); 
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -120,7 +138,6 @@ main{
     h3{
         font-family: "SegoePrint";
         color: #72bf56;
-        font-size: 3vw;
     }
 }
 aside{
