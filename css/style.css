@@ -19,14 +19,289 @@ a {
   cursor: pointer;
 }
 
-h3 {
+#h2 {
   text-align: center;
+  font-size: 3vw;
+  margin-top: 4vw;
 }
 
-#note_b, #chic_b, #delice_b, #palette_b {
-  width: 1750px;
-  height: 900px;
-  grid-area: 1/4/1/4;
+#menunote {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #fcdfdb;
+  height: 112.2666666667vw;
+  width: 79.3333333333vw;
+  box-shadow: 0 0 15px #e1e1e1;
+  margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
+}
+#menunote .debut {
+  margin-bottom: 2.6666666667vw;
+  text-align: center;
+}
+#menunote .debut span {
+  margin-top: 6vw;
+  font-size: 6vw;
+  background: linear-gradient(90deg, #f04d5f 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menunote .debut h3 {
+  font-size: 5vw;
+  color: #3d1319;
+  font-family: "Devonshire", cursive;
+  font-weight: 400;
+}
+#menunote .fin {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 43.3333333333vw;
+}
+#menunote .fin span {
+  font-size: 4.2vw;
+  background: linear-gradient(90deg, #f04d5f 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 1vw;
+}
+#menunote .fin h5 {
+  font-family: "Devonshire", cursive;
+  font-weight: 400;
+  font-size: 4vw;
+  margin: 0;
+}
+#menunote .titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto 8.4vw auto 8.4vw;
+}
+#menunote .titre img {
+  width: 32%;
+  height: auto;
+  color: #3d1319;
+}
+#menunote .titre h4 {
+  font-size: 2.2vw;
+  font-family: "Segoe Print", cursive;
+  font-weight: 400;
+}
+#menunote .plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vw 8.6vw 7.3333333333vw 8.6vw;
+  line-height: 280%;
+  font-size: 1.5vw;
+  font-family: "SegoePrint", cursive;
+}
+#menunote .plat .prix {
+  font-weight: bold;
+  text-align: right;
+}
+
+#menuchic {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #fff5fe;
+  height: 112.2666666667vw;
+  width: 79.3333333333vw;
+  box-shadow: 0 0 15px #e1e1e1;
+  margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
+}
+#menuchic .debut {
+  margin-top: 10vw;
+  margin-bottom: 6.6666666667vw;
+  text-align: center;
+}
+#menuchic .debut h3 {
+  font-family: "Croissant One", cursive;
+  font-weight: 300;
+  background: linear-gradient(143deg, #c67412 0%, #a56799 60%, #6e4ccc 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5vw;
+}
+#menuchic .titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto 3.0666666667vw auto 3.0666666667vw;
+}
+#menuchic .titre img {
+  width: 32%;
+  height: auto;
+}
+#menuchic .titre h4 {
+  font-size: 2.1vw;
+  font-family: "Cambria", serif;
+  font-weight: 700;
+}
+#menuchic .titre1 {
+  filter: invert(57%) sepia(50%) saturate(6528%) hue-rotate(16deg) brightness(98%) contrast(86%);
+}
+#menuchic .titre2 {
+  filter: invert(55%) sepia(11%) saturate(1621%) hue-rotate(260deg) brightness(82%) contrast(85%);
+}
+#menuchic .titre3 {
+  filter: invert(31%) sepia(94%) saturate(1243%) hue-rotate(235deg) brightness(84%) contrast(90%);
+}
+#menuchic .plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vw 11.3333333333vw 7.3333333333vw 11.3333333333vw;
+  line-height: 280%;
+  font-size: 1.8vw;
+  font-family: "Prociono", serif;
+  letter-spacing: 0.2px;
+}
+#menuchic .plat .prix {
+  font-size: 2.2vw;
+  text-align: right;
+}
+#menuchic .plat .option1, #menuchic .plat .prix1 {
+  color: #c67412;
+}
+#menuchic .plat .option2, #menuchic .plat .prix2 {
+  color: #a56799;
+}
+#menuchic .plat .option3 {
+  color: #6e4ccc;
+}
+
+#menudelice {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #edefef;
+  height: 112.2666666667vw;
+  width: 79.3333333333vw;
+  box-shadow: 0 0 15px #e1e1e1;
+  margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
+}
+#menudelice .debut {
+  margin-top: 10vw;
+  margin-bottom: 6.6666666667vw;
+  text-align: center;
+}
+#menudelice .debut h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+  background: linear-gradient(113deg, #0228dd 25%, #0887fb 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6.5vw;
+}
+#menudelice .titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0.6666666667vw 3.0666666667vw 0.6666666667vw 3.0666666667vw;
+}
+#menudelice .titre img {
+  width: 32%;
+  height: auto;
+}
+#menudelice .titre h4 {
+  font-size: 1.9vw;
+  font-family: "SegoePrint", cursive;
+  font-weight: 500;
+}
+#menudelice .titre1 img {
+  filter: invert(13%) sepia(100%) saturate(5407%) hue-rotate(234deg) brightness(82%) contrast(116%);
+}
+#menudelice .titre2 img {
+  filter: invert(25%) sepia(87%) saturate(2445%) hue-rotate(205deg) brightness(99%) contrast(96%);
+}
+#menudelice .titre3 img {
+  filter: invert(45%) sepia(79%) saturate(1227%) hue-rotate(182deg) brightness(100%) contrast(96%);
+}
+#menudelice .plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vw 11.3333333333vw 3.3333333333vw 11.3333333333vw;
+  line-height: 280%;
+  font-size: 1.5vw;
+  font-family: "SegoePrint", cursive;
+  font-weight: 500;
+}
+#menudelice .plat .prix {
+  font-size: 2.1vw;
+  text-align: right;
+}
+
+#menupalette {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #fdfffd;
+  height: 112.2666666667vw;
+  width: 79.3333333333vw;
+  box-shadow: 0 0 15px #e1e1e1;
+  margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
+}
+#menupalette .debut {
+  margin-top: 10vw;
+  margin-bottom: 6.6666666667vw;
+  text-align: center;
+}
+#menupalette .debut h3 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(113deg, #41963c 17%, #b8fa7c 59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6vw;
+  font-weight: 400;
+}
+#menupalette .titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0.6666666667vw 3.0666666667vw 0.6666666667vw 3.0666666667vw;
+}
+#menupalette .titre img {
+  width: 32%;
+  height: auto;
+}
+#menupalette .titre h4 {
+  font-size: 1.9vw;
+  font-family: "SegoePrint", cursive;
+  font-weight: 500;
+}
+#menupalette .plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vw 9vw 3.3333333333vw 9vw;
+  line-height: 280%;
+  font-size: 1.5vw;
+  font-family: "SegoePrint", cursive;
+  font-weight: 500;
+}
+#menupalette .plat .prix {
+  font-size: 2.1vw;
+  text-align: right;
+}
+
+#mention {
+  height: auto;
+  width: 79.3333333333vw;
+  font-size: 1.5vw;
+  margin: 5.3333333333vw 10.8vw 10vw 10.8vw;
 }
 
 header {
@@ -35,7 +310,7 @@ header {
   width: 100%;
   max-width: 100%;
   height: 16.2vw;
-  max-height: 104.8666666667px;
+  max-height: 124.6666666667px;
   border-bottom: 0.1333333333vw solid #a1c181;
 }
 header h1 {
@@ -77,7 +352,7 @@ main .menu {
     align-content: center;
   }
 }
-main figure {
+main .menu figure {
   display: flex;
   height: 50.5333333333vw;
   width: 35.7333333333vw;
@@ -87,38 +362,38 @@ main figure {
   box-shadow: 0 0 15px #e1e1e1;
 }
 @media screen and (min-width: 1100px) {
-  main figure {
+  main .menu figure {
     height: 40vw;
     width: 28.2666666667vw;
   }
 }
 @media screen and (max-width: 500px) {
-  main figure {
+  main .menu figure {
     height: 80vw;
     width: 56.5333333333vw;
   }
 }
-main figure h2 {
+main .menu figure h2 {
   width: 35vw;
   font-size: 3vw;
 }
 @media screen and (min-width: 1100px) {
-  main figure h2 {
+  main .menu figure h2 {
     width: 28.2666666667vw;
   }
 }
 @media screen and (max-width: 500px) {
-  main figure h2 {
+  main .menu figure h2 {
     width: 55vw;
     font-size: 4.5vw;
   }
 }
-main figure h3 {
+main .menu figure h3 {
   padding-top: 10%;
   font-size: 3vw;
 }
 @media screen and (max-width: 500px) {
-  main figure h3 {
+  main .menu figure h3 {
     font-size: 5vw;
   }
 }
@@ -166,7 +441,7 @@ main figure h3 {
 }
 @media screen and (max-width: 500px) {
   #chic h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 #chic h3 {

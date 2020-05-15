@@ -1,9 +1,281 @@
-h3{
+#h2{
     text-align: center;
-  
+    font-size: 3vw;
+    margin-top: (60px/$width-body)*100vw;
 }
-#note_b, #chic_b, #delice_b, #palette_b{
-    width: 1750px;
-    height: 900px;
-    grid-area: 1/4/1/4;
+#menunote{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: $color-note;
+    height: (1684px/$width-body)*100vw;
+    width: (1190px/$width-body)*100vw;
+    box-shadow: 0 0 15px rgb(225, 225, 225);
+    margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    .debut{
+        margin-bottom: (40px/$width-body)*100vw;
+        text-align: center;
+        span{
+            margin-top: (90px/$width-body)*100vw;
+            font-size: 6vw;
+            background: linear-gradient(90deg, rgba(240,77,95,1) 0%, rgba(246,145,106,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3{
+            font-size: 5vw;
+            color: #3d1319;
+            font-family: 'Devonshire' , cursive;
+            font-weight: 400;
+            
+        }
+    }
+    .fin{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: (650px/$width-body)*100vw;
+        span{
+            font-size: 4.2vw;
+            background: linear-gradient(90deg, rgba(240,77,95,1) 0%, rgba(246,145,106,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-right: (15px/$width-body)*100vw;
+        }
+        h5{
+            font-family: 'Devonshire' , cursive;
+            font-weight: 400;
+            font-size: 4vw;
+            margin: 0;
+        }
+    }
+    .titre{
+        img{
+            width: 32%;
+            height: auto;
+            color: #3d1319;
+        }
+        h4{
+            font-size: 2.2vw;
+            font-family: 'Segoe Print' , cursive;
+            font-weight: 400;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: auto (126px/$width-body)*100vw auto (126px/$width-body)*100vw;
+    }
+    .plat{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: (30px/$width-body)*100vw (129px/$width-body)*100vw (110px/$width-body)*100vw (129px/$width-body)*100vw;
+        line-height: 280%;
+        font-size: 1.5vw;
+        font-family: 'SegoePrint', cursive;
+        .prix{
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+}
+#menuchic{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: $color-chic;
+    height: (1684px/$width-body)*100vw;
+    width: (1190px/$width-body)*100vw;
+    box-shadow: 0 0 15px rgb(225, 225, 225);
+    margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    .debut{
+        margin-top: (150px/$width-body)*100vw;
+        margin-bottom: (100px/$width-body)*100vw;
+        text-align: center;
+        h3{
+            font-family: 'Croissant One', cursive;
+            font-weight: 300;
+            background: linear-gradient(143deg, rgba(198,116,18,1) 0%, rgba(165,103,153,1) 60%, rgba(110,76,204,1) 99%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3.5vw;
+            
+        }
+    }
+    .titre{
+        img{
+            width: 32%;
+            height: auto;
+        }
+        h4{
+            font-size: 2.1vw;
+            font-family: 'Cambria', serif;
+            font-weight: 700;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: auto (46px/$width-body)*100vw auto (46px/$width-body)*100vw;
+    }
+    .titre1{
+        filter: invert(57%) sepia(50%) saturate(6528%) hue-rotate(16deg) brightness(98%) contrast(86%);
+    }
+    .titre2{
+        filter: invert(55%) sepia(11%) saturate(1621%) hue-rotate(260deg) brightness(82%) contrast(85%);
+    }
+    .titre3{
+        filter: invert(31%) sepia(94%) saturate(1243%) hue-rotate(235deg) brightness(84%) contrast(90%);
+    }
+    .plat{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: (30px/$width-body)*100vw (170px/$width-body)*100vw (110px/$width-body)*100vw (170px/$width-body)*100vw;
+        line-height: 280%;
+        font-size: 1.8vw;
+        font-family: 'Prociono', serif;
+        letter-spacing: 0.2px;
+        .prix{
+            font-size: 2.2vw;
+            text-align: right;
+        }
+        .option1, .prix1{
+            color: #c67412;
+        }
+        .option2, .prix2{
+            color: #a56799;
+        }
+        .option3{
+            color: #6e4ccc;
+        }
+    }
+}
+#menudelice{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: $color-delice;
+    height: (1684px/$width-body)*100vw;
+    width: (1190px/$width-body)*100vw;
+    box-shadow: 0 0 15px rgb(225, 225, 225);
+    margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    .debut{
+        margin-top: (150px/$width-body)*100vw;
+        margin-bottom: (100px/$width-body)*100vw;
+        text-align: center;
+        h3{
+            font-family: 'Dancing Script', cursive;
+            font-weight: 300;
+            background: linear-gradient(113deg, rgba(2,40,221,1) 25%, rgba(8,135,251,1) 67%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 6.5vw; 
+        }
+    }
+    .titre{
+        img{
+            width: 32%;
+            height: auto;
+        }
+        h4{
+            font-size: 1.9vw;
+            font-family: 'SegoePrint', cursive;
+            font-weight: 500;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: (10px/$width-body)*100vw (46px/$width-body)*100vw (10px/$width-body)*100vw (46px/$width-body)*100vw;
+    }
+    .titre1{
+        img{
+            filter: invert(13%) sepia(100%) saturate(5407%) hue-rotate(234deg) brightness(82%) contrast(116%);
+        } 
+    }
+    .titre2{
+        img{
+            filter: invert(25%) sepia(87%) saturate(2445%) hue-rotate(205deg) brightness(99%) contrast(96%);
+        }
+    }
+    .titre3{
+        img{
+            filter: invert(45%) sepia(79%) saturate(1227%) hue-rotate(182deg) brightness(100%) contrast(96%);
+        }  
+    }
+    .plat{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: (30px/$width-body)*100vw (170px/$width-body)*100vw (50px/$width-body)*100vw (170px/$width-body)*100vw;
+        line-height: 280%;
+        font-size: 1.5vw;
+        font-family: 'SegoePrint', cursive;
+        font-weight: 500;
+        .prix{
+            font-size: 2.1vw;
+            text-align: right;
+        }
+    }
+}
+#menupalette{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: $color-palette;
+    height: (1684px/$width-body)*100vw;
+    width: (1190px/$width-body)*100vw;
+    box-shadow: 0 0 15px rgb(225, 225, 225);
+    margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    .debut{
+        margin-top: (150px/$width-body)*100vw;
+        margin-bottom: (100px/$width-body)*100vw;
+        text-align: center;
+        h3{
+            font-family: 'Kaushan Script', cursive;
+            background: linear-gradient(113deg, rgba(65,150,60,1) 17%, rgba(184,250,124,1) 59%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 6vw;
+            font-weight: 400;
+        }
+    }
+    .titre{
+        img{
+            width: 32%;
+            height: auto;
+        }
+        h4{
+            font-size: 1.9vw;
+            font-family: 'SegoePrint', cursive;
+            font-weight: 500;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: (10px/$width-body)*100vw (46px/$width-body)*100vw (10px/$width-body)*100vw (46px/$width-body)*100vw;
+    }
+    .plat{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: (30px/$width-body)*100vw (135px/$width-body)*100vw (50px/$width-body)*100vw (135px/$width-body)*100vw;
+        line-height: 280%;
+        font-size: 1.5vw;
+        font-family: 'SegoePrint', cursive;
+        font-weight: 500;
+        .prix{
+            font-size: 2.1vw;
+            text-align: right;
+        }
+    }
 }
