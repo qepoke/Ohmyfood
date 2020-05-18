@@ -1,0 +1,89 @@
+main{
+    .menu{
+        figure{
+             &:hover h2{
+                transition : all 0.5s ease-in-out;
+                opacity : 0.6;
+                font-size: 3.5vw;
+                @include mobile{
+                    font-size: 6vw;
+                }
+             } 
+             &:hover h3{
+                transition : all 0.5s ease-in-out;
+                opacity : 0.6;
+                font-size: 4vw;
+                @include mobile{
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+}
+#note{
+    figure{
+        &:hover span{
+            transition : all 0.5s ease-in-out;
+            opacity : 0.6;
+            font-size: 6vw;
+            transform: scale(1.0);
+            @include mobile{
+                font-size: 10vw;
+            }
+        }
+    }
+}
+#chic{
+    figure{
+        &:hover h2{
+            transition : all 0.5s ease-in-out;
+            opacity : 0.6;
+            font-size: 2.3vw;
+            @include mobile{
+                font-size: 4.5vw;
+            }
+         } 
+    } 
+}
+footer {
+    nav{
+        h2{
+            &:hover{
+                animation: wiggle 0.8s 0.1s ease-in-out infinite alternate;
+            }
+        }    
+    }
+}
+aside{
+    .next{
+        #points{
+            .point{
+                &:nth-child(1){
+                    animation: pulse 2s 0s infinite;
+                }
+                &:nth-child(2){
+                    animation: pulse 2s 0.2s infinite;
+                }
+                &:nth-child(3){
+                    animation: pulse 2s 0.4s infinite;
+                }
+            }
+        }
+    }
+}
+#menunote, #menudelice, #menuchic, #menupalette{
+    .titre{
+        h4{
+            background: linear-gradient(to top, $color-title 8%, transparent 8.01%) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 500ms;
+            &:hover{
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+/*@media (prefers-reduced-motion: reduce) {
+    .animation {
+    animation: none;
+}*/

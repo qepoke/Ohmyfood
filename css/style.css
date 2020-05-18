@@ -1,3 +1,55 @@
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-2deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(2deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-2deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-2deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-2deg);
+  }
+}
+@keyframes pulse {
+  /*40%{
+      opacity: 0; 
+  }
+  50%{
+      opacity: 0.5;
+  }
+  80%{
+      opacity: 1;
+  }*/
+  0% {
+    background-color: #579c87;
+  }
+  100% {
+    background-color: #fdcb46;
+  }
+}
 h1, h2, h3, h4, img, figure, p {
   margin: 0;
   padding: 0;
@@ -146,12 +198,21 @@ a {
   font-weight: 700;
 }
 #menuchic .titre1 {
+  color: #c67412;
+}
+#menuchic .titre1 img {
   filter: invert(57%) sepia(50%) saturate(6528%) hue-rotate(16deg) brightness(98%) contrast(86%);
 }
 #menuchic .titre2 {
+  color: #a56799;
+}
+#menuchic .titre2 img {
   filter: invert(55%) sepia(11%) saturate(1621%) hue-rotate(260deg) brightness(82%) contrast(85%);
 }
 #menuchic .titre3 {
+  color: #6e4ccc;
+}
+#menuchic .titre3 img {
   filter: invert(31%) sepia(94%) saturate(1243%) hue-rotate(235deg) brightness(84%) contrast(90%);
 }
 #menuchic .plat {
@@ -299,9 +360,25 @@ a {
 
 #mention {
   height: auto;
-  width: 79.3333333333vw;
+  width: 53.3333333333vw;
   font-size: 1.5vw;
-  margin: 5.3333333333vw 10.8vw 10vw 10.8vw;
+  margin: 5.3333333333vw auto 10vw auto;
+}
+#mention p {
+  font-size: 1vw;
+  text-align: justify;
+}
+#mention .mentionh2 {
+  text-align: center;
+  font-size: 1.8vw;
+  margin-bottom: 1.3333333333vw;
+  margin-top: 1.3333333333vw;
+}
+#mention .mentionh3 {
+  text-align: center;
+  font-size: 1.3vw;
+  margin-bottom: 1.3333333333vw;
+  margin-top: 1.3333333333vw;
 }
 
 header {
@@ -375,6 +452,7 @@ main .menu figure {
 }
 main .menu figure h2 {
   width: 35vw;
+  z-index: 2;
   font-size: 3vw;
 }
 @media screen and (min-width: 1100px) {
@@ -437,7 +515,7 @@ main .menu figure h3 {
   background: linear-gradient(143deg, #c67412 0%, #a56799 60%, #6e4ccc 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.3vw;
+  font-size: 2vw;
 }
 @media screen and (max-width: 500px) {
   #chic h2 {
@@ -522,6 +600,32 @@ aside .next p {
     font-size: 35px;
   }
 }
+aside .next #points {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 1.6666666667vw;
+  margin-left: 0.6666666667vw;
+}
+@media screen and (min-width: 1100px) {
+  aside .next #points {
+    margin-bottom: 20px;
+    margin-left: 13px;
+  }
+}
+aside .next #points .point {
+  margin: 0.8666666667vw;
+  width: 0.8666666667vw;
+  height: 0.8666666667vw;
+  border-radius: 50%;
+  background-color: #fdcb46;
+}
+@media screen and (min-width: 1100px) {
+  aside .next #points .point {
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
 
 footer {
   position: fixed;
@@ -557,5 +661,77 @@ footer nav h2 a {
   text-decoration: none;
   font-weight: 500;
 }
+
+main .menu figure:hover h2 {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+  font-size: 3.5vw;
+}
+@media screen and (max-width: 500px) {
+  main .menu figure:hover h2 {
+    font-size: 6vw;
+  }
+}
+main .menu figure:hover h3 {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+  font-size: 4vw;
+}
+@media screen and (max-width: 500px) {
+  main .menu figure:hover h3 {
+    font-size: 6vw;
+  }
+}
+
+#note figure:hover span {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+  font-size: 6vw;
+  transform: scale(1);
+}
+@media screen and (max-width: 500px) {
+  #note figure:hover span {
+    font-size: 10vw;
+  }
+}
+
+#chic figure:hover h2 {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+  font-size: 2.3vw;
+}
+@media screen and (max-width: 500px) {
+  #chic figure:hover h2 {
+    font-size: 4.5vw;
+  }
+}
+
+footer nav h2:hover {
+  animation: wiggle 0.8s 0.1s ease-in-out infinite alternate;
+}
+
+aside .next #points .point:nth-child(1) {
+  animation: pulse 2s 0s infinite;
+}
+aside .next #points .point:nth-child(2) {
+  animation: pulse 2s 0.2s infinite;
+}
+aside .next #points .point:nth-child(3) {
+  animation: pulse 2s 0.4s infinite;
+}
+
+#menunote .titre h4, #menudelice .titre h4, #menuchic .titre h4, #menupalette .titre h4 {
+  background: linear-gradient(to top, #fdcb46 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 500ms;
+}
+#menunote .titre h4:hover, #menudelice .titre h4:hover, #menuchic .titre h4:hover, #menupalette .titre h4:hover {
+  background-size: 100% 100%;
+}
+
+/*@media (prefers-reduced-motion: reduce) {
+    .animation {
+    animation: none;
+}*/
 
 /*# sourceMappingURL=style.css.map */

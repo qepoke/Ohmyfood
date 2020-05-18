@@ -1,0 +1,65 @@
+@keyframes wiggle{ 
+    0%{ 
+        transform: translate(1px, 1px) rotate(0deg);
+        //transform: skewX(9deg);
+    }
+    10% { 
+        transform: translate(-1px, -2px) rotate(-2deg);
+        //transform: skewX(-8deg);
+    }
+    20% { 
+        transform: translate(-3px, 0px) rotate(2deg); 
+        //transform: skewX(7deg);
+    }
+    30% { 
+        transform: translate(3px, 2px) rotate(0deg); 
+       //transform: skewX(-6deg);
+    }
+    40% { 
+        transform: translate(1px, -1px) rotate(2deg); 
+        //transform: skewX(5deg);
+    }
+    50% { 
+        transform: translate(-1px, 2px) rotate(-2deg); 
+        //transform: skewX(-4deg);
+    }
+    60% { 
+        transform: translate(-3px, 1px) rotate(0deg); 
+        //transform: skewX(3deg);
+    }
+    70% { 
+        transform: translate(3px, 1px) rotate(-2deg); 
+        //transform: skewX(-2deg);
+    }
+    80% { 
+        transform: translate(-1px, -1px) rotate(2deg); 
+        //transform: skewX(1deg);
+    }
+    90% { 
+        transform: translate(1px, 2px) rotate(0deg); 
+        //transform: skewX(0deg);
+    }
+    100% { 
+        transform: translate(1px, -2px) rotate(-2deg); 
+        //transform: skewX(0deg);
+    }
+}
+
+@keyframes pulse{ 
+    /*40%{
+        opacity: 0; 
+    }
+    50%{
+        opacity: 0.5;
+    }
+    80%{
+        opacity: 1;
+    }*/
+    0%{
+        background-color: $color-back; 
+    }
+    100%{
+        background-color: $color-title;
+    }
+
+}

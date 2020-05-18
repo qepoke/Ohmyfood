@@ -124,13 +124,22 @@
         margin: auto (46px/$width-body)*100vw auto (46px/$width-body)*100vw;
     }
     .titre1{
-        filter: invert(57%) sepia(50%) saturate(6528%) hue-rotate(16deg) brightness(98%) contrast(86%);
+        color: #c67412;
+        img{
+            filter: invert(57%) sepia(50%) saturate(6528%) hue-rotate(16deg) brightness(98%) contrast(86%);
+        }
     }
     .titre2{
-        filter: invert(55%) sepia(11%) saturate(1621%) hue-rotate(260deg) brightness(82%) contrast(85%);
+        color: #a56799;
+        img{
+            filter: invert(55%) sepia(11%) saturate(1621%) hue-rotate(260deg) brightness(82%) contrast(85%);
+        }
     }
     .titre3{
-        filter: invert(31%) sepia(94%) saturate(1243%) hue-rotate(235deg) brightness(84%) contrast(90%);
+        color: #6e4ccc;
+        img{
+            filter: invert(31%) sepia(94%) saturate(1243%) hue-rotate(235deg) brightness(84%) contrast(90%);
+        }
     }
     .plat{
         display: flex;
