@@ -644,7 +644,6 @@ footer nav {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  /*horizontal*/
   margin-left: 2.8vw;
   margin-right: 2.8vw;
 }
