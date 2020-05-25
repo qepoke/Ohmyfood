@@ -9,10 +9,22 @@ $color-palette: #fdfffd;
 $height-body: 2388px;
 $width-body: 1500px;
 
-$large: 1100px;
+$large: 1500px;
 $mobile: 500px;
+$medium: 1100px;
 
 $breakpoints: (
     mobile:$mobile,
     large:$large,
+    medium:$medium
 );
+
+@font-face {
+    font-family: 'SegoePrint';
+    src: url('../fonts/segoepr.ttf') format("truetype");      
+}
+
+@font-face {
+    font-family: 'SegoePrintBold';
+    src: url('../fonts/segoeprb.ttf') format("truetype");      
+}

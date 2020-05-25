@@ -1,4 +1,7 @@
 footer {
+    @include medium{
+        border-top: 2px;  
+    }   
     position: fixed;
     bottom: 0;
     left:0;
@@ -9,7 +12,7 @@ footer {
     height: (136px/$width-body)*100vw;
     max-height: 75px;
     border-top: (2px/$width-body)*100vw solid $color-border;
-    nav{
+    nav{ 
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -17,8 +20,8 @@ footer {
         margin-left: (42px/$width-body)*100vw;
         margin-right: (42px/$width-body)*100vw;
         h2{
-            @include large{
-                font-size: 25px;
+            @include medium{
+                font-size: 34px;
             }
             font-size: 3vw;
             a{

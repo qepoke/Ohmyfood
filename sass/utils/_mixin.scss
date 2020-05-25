@@ -8,3 +8,8 @@
         @content;
     }
 }
+@mixin medium{
+    @media screen and (min-width: map-get($breakpoints, medium)){
+        @content;
+    }
+}

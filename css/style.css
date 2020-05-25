@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SegoePrint";
+  src: url("../fonts/segoepr.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoePrintBold";
+  src: url("../fonts/segoeprb.ttf") format("truetype");
+}
 @keyframes wiggle {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -34,15 +42,6 @@
   }
 }
 @keyframes pulse {
-  /*40%{
-      opacity: 0; 
-  }
-  50%{
-      opacity: 0.5;
-  }
-  80%{
-      opacity: 1;
-  }*/
   0% {
     background-color: #579c87;
   }
@@ -76,20 +75,47 @@ a {
   font-size: 3vw;
   margin-top: 4vw;
 }
+@media screen and (min-width: 1500px) {
+  #h2 {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+}
 
 #menunote {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   background-color: #fcdfdb;
+  max-height: 1684px;
+  max-width: 1190px;
   height: 112.2666666667vw;
   width: 79.3333333333vw;
   box-shadow: 0 0 15px #e1e1e1;
   margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
 }
+@media screen and (min-width: 1500px) {
+  #menunote {
+    align-content: center;
+    margin: 28px auto 200px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menunote {
+    margin: 6% 0 6% 0;
+    width: 100%;
+    height: 100%;
+    align-content: initial;
+  }
+}
 #menunote .debut {
   margin-bottom: 2.6666666667vw;
   text-align: center;
+}
+@media screen and (min-width: 1500px) {
+  #menunote .debut {
+    margin-bottom: 40px;
+  }
 }
 #menunote .debut span {
   margin-top: 6vw;
@@ -98,11 +124,33 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (min-width: 1500px) {
+  #menunote .debut span {
+    font-size: 80px;
+    margin-top: 90px;
+  }
+}
 #menunote .debut h3 {
   font-size: 5vw;
   color: #3d1319;
   font-family: "Devonshire", cursive;
   font-weight: 400;
+}
+@media screen and (min-width: 1500px) {
+  #menunote .debut h3 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menunote .debut {
+    margin-bottom: 4vw;
+  }
+  #menunote .debut span {
+    font-size: 8vw;
+  }
+  #menunote .debut h3 {
+    font-size: 7vw;
+  }
 }
 #menunote .fin {
   display: flex;
@@ -110,7 +158,6 @@ a {
   align-content: flex-end;
   align-items: center;
   justify-content: center;
-  margin-bottom: 43.3333333333vw;
 }
 #menunote .fin span {
   font-size: 4.2vw;
@@ -119,11 +166,33 @@ a {
   -webkit-text-fill-color: transparent;
   margin-right: 1vw;
 }
+@media screen and (min-width: 1500px) {
+  #menunote .fin span {
+    font-size: 60px;
+    margin-right: 15px;
+  }
+}
 #menunote .fin h5 {
   font-family: "Devonshire", cursive;
   font-weight: 400;
   font-size: 4vw;
   margin: 0;
+}
+@media screen and (min-width: 1500px) {
+  #menunote .fin h5 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menunote .fin {
+    margin-bottom: 4%;
+  }
+  #menunote .fin span {
+    font-size: 6.2vw;
+  }
+  #menunote .fin h5 {
+    font-size: 6vw;
+  }
 }
 #menunote .titre {
   display: flex;
@@ -140,8 +209,29 @@ a {
 }
 #menunote .titre h4 {
   font-size: 2.2vw;
-  font-family: "Segoe Print", cursive;
+  font-family: "SegoePrintBold", cursive;
   font-weight: 400;
+}
+@media screen and (min-width: 1500px) {
+  #menunote .titre h4 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #menunote .titre {
+    margin: auto 126px auto 126px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menunote .titre {
+    margin: auto 2% 2.6666666667vw 2%;
+  }
+  #menunote .titre img {
+    width: 30%;
+  }
+  #menunote .titre h4 {
+    font-size: 3.2vw;
+  }
 }
 #menunote .plat {
   display: flex;
@@ -152,9 +242,21 @@ a {
   font-size: 1.5vw;
   font-family: "SegoePrint", cursive;
 }
+@media screen and (min-width: 1500px) {
+  #menunote .plat {
+    margin: 30px 129px 110px 129px;
+    font-size: 22px;
+  }
+}
 #menunote .plat .prix {
   font-weight: bold;
   text-align: right;
+}
+@media screen and (max-width: 500px) {
+  #menunote .plat {
+    font-size: 2.5vw;
+    margin: 2vw 4% 10vw 4%;
+  }
 }
 
 #menuchic {
@@ -162,23 +264,60 @@ a {
   flex-direction: column;
   align-content: space-between;
   background-color: #fff5fe;
+  max-height: 1684px;
+  max-width: 1190px;
   height: 112.2666666667vw;
   width: 79.3333333333vw;
   box-shadow: 0 0 15px #e1e1e1;
   margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
+}
+@media screen and (min-width: 1500px) {
+  #menuchic {
+    align-content: center;
+    margin: 28px auto 200px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menuchic {
+    justify-content: center;
+    margin: 6% 0 6% 0;
+    width: 100%;
+    height: 100%;
+    align-content: initial;
+  }
 }
 #menuchic .debut {
   margin-top: 10vw;
   margin-bottom: 6.6666666667vw;
   text-align: center;
 }
+@media screen and (min-width: 1500px) {
+  #menuchic .debut {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+}
 #menuchic .debut h3 {
   font-family: "Croissant One", cursive;
   font-weight: 300;
-  background: linear-gradient(143deg, #c67412 0%, #a56799 60%, #6e4ccc 99%);
+  background: linear-gradient(157deg, #d8852e 30%, #905bfd 67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5vw;
+}
+@media screen and (min-width: 1500px) {
+  #menuchic .debut h3 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menuchic .debut {
+    margin-top: 16.6666666667vw;
+    margin-bottom: 13.3333333333vw;
+  }
+  #menuchic .debut h3 {
+    font-size: 6vw;
+  }
 }
 #menuchic .titre {
   display: flex;
@@ -188,6 +327,11 @@ a {
   text-align: center;
   margin: auto 3.0666666667vw auto 3.0666666667vw;
 }
+@media screen and (min-width: 1500px) {
+  #menuchic .titre {
+    margin: auto 46px auto 46px;
+  }
+}
 #menuchic .titre img {
   width: 32%;
   height: auto;
@@ -196,6 +340,22 @@ a {
   font-size: 2.1vw;
   font-family: "Cambria", serif;
   font-weight: 700;
+}
+@media screen and (min-width: 1500px) {
+  #menuchic .titre h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menuchic .titre {
+    margin: auto 2% 4vw 2%;
+  }
+  #menuchic .titre img {
+    width: 30%;
+  }
+  #menuchic .titre h4 {
+    font-size: 3.2vw;
+  }
 }
 #menuchic .titre1 {
   color: #c67412;
@@ -225,9 +385,20 @@ a {
   font-family: "Prociono", serif;
   letter-spacing: 0.2px;
 }
+@media screen and (min-width: 1500px) {
+  #menuchic .plat {
+    margin: 30px 170px 110px 170px;
+    font-size: 28px;
+  }
+}
 #menuchic .plat .prix {
   font-size: 2.2vw;
   text-align: right;
+}
+@media screen and (min-width: 1500px) {
+  #menuchic .plat .prix {
+    font-size: 32px;
+  }
 }
 #menuchic .plat .option1, #menuchic .plat .prix1 {
   color: #c67412;
@@ -238,21 +409,53 @@ a {
 #menuchic .plat .option3 {
   color: #6e4ccc;
 }
+@media screen and (max-width: 500px) {
+  #menuchic .plat {
+    font-size: 3vw;
+    margin: 2vw 4% 7.3333333333vw 4%;
+  }
+  #menuchic .plat .prix {
+    font-size: 3.2vw;
+  }
+}
 
 #menudelice {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   background-color: #edefef;
+  max-height: 1684px;
+  max-width: 1190px;
   height: 112.2666666667vw;
   width: 79.3333333333vw;
   box-shadow: 0 0 15px #e1e1e1;
   margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
 }
+@media screen and (min-width: 1500px) {
+  #menudelice {
+    align-content: center;
+    margin: 28px auto 200px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menudelice {
+    justify-items: center;
+    margin: 6% 0 6% 0;
+    width: 100%;
+    height: 100%;
+    align-content: initial;
+  }
+}
 #menudelice .debut {
   margin-top: 10vw;
   margin-bottom: 6.6666666667vw;
   text-align: center;
+}
+@media screen and (min-width: 1500px) {
+  #menudelice .debut {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
 }
 #menudelice .debut h3 {
   font-family: "Dancing Script", cursive;
@@ -262,6 +465,20 @@ a {
   -webkit-text-fill-color: transparent;
   font-size: 6.5vw;
 }
+@media screen and (min-width: 1500px) {
+  #menudelice .debut h3 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menudelice .debut {
+    margin-top: 16.6666666667vw;
+    margin-bottom: 13.3333333333vw;
+  }
+  #menudelice .debut h3 {
+    font-size: 8vw;
+  }
+}
 #menudelice .titre {
   display: flex;
   flex-direction: row;
@@ -269,6 +486,11 @@ a {
   align-items: center;
   text-align: center;
   margin: 0.6666666667vw 3.0666666667vw 0.6666666667vw 3.0666666667vw;
+}
+@media screen and (min-width: 1500px) {
+  #menudelice .titre {
+    margin: 10px 46px 10px 46px;
+  }
 }
 #menudelice .titre img {
   width: 32%;
@@ -278,6 +500,22 @@ a {
   font-size: 1.9vw;
   font-family: "SegoePrint", cursive;
   font-weight: 500;
+}
+@media screen and (min-width: 1500px) {
+  #menudelice .titre h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menudelice .titre {
+    margin: auto 2% 4vw 2%;
+  }
+  #menudelice .titre img {
+    width: 30%;
+  }
+  #menudelice .titre h4 {
+    font-size: 3.2vw;
+  }
 }
 #menudelice .titre1 img {
   filter: invert(13%) sepia(100%) saturate(5407%) hue-rotate(234deg) brightness(82%) contrast(116%);
@@ -298,9 +536,29 @@ a {
   font-family: "SegoePrint", cursive;
   font-weight: 500;
 }
+@media screen and (min-width: 1500px) {
+  #menudelice .plat {
+    margin: 30px 170px 50px 170px;
+    font-size: 22px;
+  }
+}
 #menudelice .plat .prix {
   font-size: 2.1vw;
   text-align: right;
+}
+@media screen and (min-width: 1500px) {
+  #menudelice .plat .prix {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menudelice .plat {
+    font-size: 2.5vw;
+    margin: 2vw 4% 7.3333333333vw 4%;
+  }
+  #menudelice .plat .prix {
+    font-size: 3.2vw;
+  }
 }
 
 #menupalette {
@@ -308,15 +566,39 @@ a {
   flex-direction: column;
   align-content: space-between;
   background-color: #fdfffd;
+  max-height: 1684px;
+  max-width: 1190px;
   height: 112.2666666667vw;
   width: 79.3333333333vw;
   box-shadow: 0 0 15px #e1e1e1;
   margin: 1.8666666667vw 10.8vw 13.3333333333vw 10.8vw;
 }
+@media screen and (min-width: 1500px) {
+  #menupalette {
+    align-content: center;
+    margin: 28px auto 200px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menupalette {
+    justify-items: center;
+    margin: auto 0 6% 0;
+    width: 100%;
+    height: 100%;
+    align-content: initial;
+    box-shadow: initial;
+  }
+}
 #menupalette .debut {
   margin-top: 10vw;
   margin-bottom: 6.6666666667vw;
   text-align: center;
+}
+@media screen and (min-width: 1500px) {
+  #menupalette .debut {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
 }
 #menupalette .debut h3 {
   font-family: "Kaushan Script", cursive;
@@ -326,6 +608,20 @@ a {
   font-size: 6vw;
   font-weight: 400;
 }
+@media screen and (min-width: 1500px) {
+  #menupalette .debut h3 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menupalette .debut {
+    margin-top: 16.6666666667vw;
+    margin-bottom: 13.3333333333vw;
+  }
+  #menupalette .debut h3 {
+    font-size: 7vw;
+  }
+}
 #menupalette .titre {
   display: flex;
   flex-direction: row;
@@ -333,6 +629,11 @@ a {
   align-items: center;
   text-align: center;
   margin: 0.6666666667vw 3.0666666667vw 0.6666666667vw 3.0666666667vw;
+}
+@media screen and (min-width: 1500px) {
+  #menupalette .titre {
+    margin: 10px 46px 10px 46px;
+  }
 }
 #menupalette .titre img {
   width: 32%;
@@ -342,6 +643,22 @@ a {
   font-size: 1.9vw;
   font-family: "SegoePrint", cursive;
   font-weight: 500;
+}
+@media screen and (min-width: 1500px) {
+  #menupalette .titre h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menupalette .titre {
+    margin: auto 2% 4vw 2%;
+  }
+  #menupalette .titre img {
+    width: 30%;
+  }
+  #menupalette .titre h4 {
+    font-size: 3.2vw;
+  }
 }
 #menupalette .plat {
   display: flex;
@@ -353,9 +670,29 @@ a {
   font-family: "SegoePrint", cursive;
   font-weight: 500;
 }
+@media screen and (min-width: 1500px) {
+  #menupalette .plat {
+    margin: 30px 135px 50px 135px;
+    font-size: 22px;
+  }
+}
 #menupalette .plat .prix {
   font-size: 2.1vw;
   text-align: right;
+}
+@media screen and (min-width: 1500px) {
+  #menupalette .plat .prix {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menupalette .plat {
+    font-size: 2.3vw;
+    margin: 2vw 4% 7.3333333333vw 4%;
+  }
+  #menupalette .plat .prix {
+    font-size: 3.2vw;
+  }
 }
 
 #mention {
@@ -387,8 +724,13 @@ header {
   width: 100%;
   max-width: 100%;
   height: 16.2vw;
-  max-height: 124.6666666667px;
+  max-height: 124px;
   border-bottom: 0.1333333333vw solid #a1c181;
+}
+@media screen and (min-width: 1100px) {
+  header {
+    border-bottom: 2px;
+  }
 }
 header h1 {
   font-size: 6vw;
@@ -409,6 +751,7 @@ main {
   justify-content: center;
   align-content: space-between;
   width: 100%;
+  height: 100%;
 }
 main .menu {
   display: flex;
@@ -417,7 +760,7 @@ main .menu {
   justify-content: space-between;
   margin: 6.6vw 10.8vw 5.6vw 10.8vw;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1500px) {
   main .menu {
     margin: 4.6666666667vw auto 2vw auto;
     justify-content: space-around;
@@ -438,7 +781,7 @@ main .menu figure {
   text-align: center;
   box-shadow: 0 0 15px #e1e1e1;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1500px) {
   main .menu figure {
     height: 40vw;
     width: 28.2666666667vw;
@@ -446,8 +789,8 @@ main .menu figure {
 }
 @media screen and (max-width: 500px) {
   main .menu figure {
-    height: 80vw;
-    width: 56.5333333333vw;
+    height: 93.3333333333vw;
+    width: 66vw;
   }
 }
 main .menu figure h2 {
@@ -455,7 +798,7 @@ main .menu figure h2 {
   z-index: 2;
   font-size: 3vw;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1500px) {
   main .menu figure h2 {
     width: 28.2666666667vw;
   }
@@ -499,7 +842,7 @@ main .menu figure h3 {
   color: #3d1319;
 }
 #note figure h3 {
-  font-family: "Segoe Print";
+  font-family: "SegoePrintBold";
   color: #3d1319;
 }
 
@@ -512,7 +855,7 @@ main .menu figure h3 {
 #chic h2 {
   font-family: "Croissant One", cursive;
   font-weight: 300;
-  background: linear-gradient(143deg, #c67412 0%, #a56799 60%, #6e4ccc 99%);
+  background: linear-gradient(157deg, #d8852e 30%, #905bfd 67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2vw;
@@ -546,7 +889,7 @@ main .menu figure h3 {
 #palette {
   margin-bottom: 6.2666666667vw;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1500px) {
   #palette {
     margin-left: auto;
     margin-right: auto;
@@ -597,7 +940,7 @@ aside .next p {
 }
 @media screen and (min-width: 1100px) {
   aside .next p {
-    font-size: 35px;
+    font-size: 43px;
   }
 }
 aside .next #points {
@@ -639,6 +982,11 @@ footer {
   max-height: 75px;
   border-top: 0.1333333333vw solid #a1c181;
 }
+@media screen and (min-width: 1100px) {
+  footer {
+    border-top: 2px;
+  }
+}
 footer nav {
   width: 100%;
   display: flex;
@@ -652,7 +1000,7 @@ footer nav h2 {
 }
 @media screen and (min-width: 1100px) {
   footer nav h2 {
-    font-size: 25px;
+    font-size: 34px;
   }
 }
 footer nav h2 a {

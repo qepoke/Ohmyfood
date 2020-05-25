@@ -1,21 +1,44 @@
 #h2{
+    @include large{
+        font-size: 32px;
+        margin-top: 60px;  
+    }
     text-align: center;
     font-size: 3vw;
     margin-top: (60px/$width-body)*100vw;
 }
 #menunote{
+    @include large{
+        align-content: center; 
+        margin: 28px auto 200px auto;   
+    }
     display: flex;
     flex-direction: column;
     align-content: space-between;
     background-color: $color-note;
+    max-height: 1684px;
+    max-width: 1190px;
     height: (1684px/$width-body)*100vw;
     width: (1190px/$width-body)*100vw;
     box-shadow: 0 0 15px rgb(225, 225, 225);
     margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    @include mobile{
+        margin: 6% 0 6% 0;
+        width: 100%;
+        height: 100%;
+        align-content: initial;
+    }
     .debut{
+        @include large{
+            margin-bottom: 40px;
+        }
         margin-bottom: (40px/$width-body)*100vw;
         text-align: center;
         span{
+            @include large{
+                font-size: 80px;
+                margin-top: 90px;
+            }
             margin-top: (90px/$width-body)*100vw;
             font-size: 6vw;
             background: linear-gradient(90deg, rgba(240,77,95,1) 0%, rgba(246,145,106,1) 100%);
@@ -23,11 +46,22 @@
             -webkit-text-fill-color: transparent;
         }
         h3{
+            @include large{
+                font-size: 70px;
+            }
             font-size: 5vw;
             color: #3d1319;
             font-family: 'Devonshire' , cursive;
-            font-weight: 400;
-            
+            font-weight: 400; 
+        }
+        @include mobile{
+            margin-bottom: (60px/$width-body)*100vw;
+            span{
+                font-size: 8vw;
+            }
+            h3{
+                font-size: 7vw;         
+            }
         }
     }
     .fin{
@@ -36,8 +70,11 @@
         align-content: flex-end;
         align-items: center;
         justify-content: center;
-        margin-bottom: (650px/$width-body)*100vw;
         span{
+            @include large{
+                font-size: 60px;
+                margin-right: 15px;
+            }
             font-size: 4.2vw;
             background: linear-gradient(90deg, rgba(240,77,95,1) 0%, rgba(246,145,106,1) 100%);
             -webkit-background-clip: text;
@@ -45,10 +82,22 @@
             margin-right: (15px/$width-body)*100vw;
         }
         h5{
+            @include large{
+                font-size: 55px;
+            }
             font-family: 'Devonshire' , cursive;
             font-weight: 400;
             font-size: 4vw;
             margin: 0;
+        }
+        @include mobile{
+            margin-bottom: 4%;
+            span{
+                font-size: 6.2vw;
+            }
+            h5{
+                font-size: 6vw;
+            }
         }
     }
     .titre{
@@ -58,18 +107,36 @@
             color: #3d1319;
         }
         h4{
+            @include large{
+                font-size: 35px;
+            }
             font-size: 2.2vw;
-            font-family: 'Segoe Print' , cursive;
+            font-family: 'SegoePrintBold' , cursive;
             font-weight: 400;
         }
-        display: flex;
+        @include large{
+            margin: auto 126px auto 126px;   
+        }display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         text-align: center;
         margin: auto (126px/$width-body)*100vw auto (126px/$width-body)*100vw;
+        @include mobile{
+            margin: auto 2% (40px/$width-body)*100vw 2%;
+            img{
+                width: 30%;
+            }
+            h4{
+                font-size: 3.2vw;
+            }
+        }
     }
     .plat{
+        @include large{
+            margin: 30px 129px 110px 129px;
+            font-size: 22px;   
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -81,40 +148,64 @@
             font-weight: bold;
             text-align: right;
         }
+        @include mobile{
+            font-size: 2.5vw;
+            margin: (30px/$width-body)*100vw 4% (150px/$width-body)*100vw 4%;
+        }
     }
 }
 #menuchic{
+    @include large{
+        align-content: center; 
+        margin: 28px auto 200px auto;   
+    }
     display: flex;
     flex-direction: column;
     align-content: space-between;
     background-color: $color-chic;
+    max-height: 1684px;
+    max-width: 1190px;
     height: (1684px/$width-body)*100vw;
     width: (1190px/$width-body)*100vw;
     box-shadow: 0 0 15px rgb(225, 225, 225);
     margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    @include mobile{
+        justify-content: center;
+        margin: 6% 0 6% 0;
+        width: 100%;
+        height: 100%;
+        align-content: initial;
+    }
     .debut{
+        @include large{
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
         margin-top: (150px/$width-body)*100vw;
         margin-bottom: (100px/$width-body)*100vw;
         text-align: center;
         h3{
+            @include large{
+                font-size: 50px;
+            }
             font-family: 'Croissant One', cursive;
             font-weight: 300;
-            background: linear-gradient(143deg, rgba(198,116,18,1) 0%, rgba(165,103,153,1) 60%, rgba(110,76,204,1) 99%);
+            background: linear-gradient(157deg, rgba(216,133,46,1) 30%, rgba(144,91,253,1) 67%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 3.5vw;
-            
+            font-size: 3.5vw;   
+        }
+        @include mobile{
+            margin-top: (250px/$width-body)*100vw;
+            margin-bottom: (200px/$width-body)*100vw;
+            h3{
+                font-size: 6vw;         
+            }
         }
     }
     .titre{
-        img{
-            width: 32%;
-            height: auto;
-        }
-        h4{
-            font-size: 2.1vw;
-            font-family: 'Cambria', serif;
-            font-weight: 700;
+        @include large{
+            margin: auto 46px auto 46px;
         }
         display: flex;
         flex-direction: row;
@@ -122,6 +213,27 @@
         align-items: center;
         text-align: center;
         margin: auto (46px/$width-body)*100vw auto (46px/$width-body)*100vw;
+        img{
+            width: 32%;
+            height: auto;
+        }
+        h4{
+            @include large{
+                font-size: 30px;
+            }
+            font-size: 2.1vw;
+            font-family: 'Cambria', serif;
+            font-weight: 700;
+        }
+        @include mobile{
+            margin: auto 2% (60px/$width-body)*100vw 2%;
+            img{
+                width: 30%;
+            }
+            h4{
+                font-size: 3.2vw;
+            }
+        }
     }
     .titre1{
         color: #c67412;
@@ -142,6 +254,10 @@
         }
     }
     .plat{
+        @include large{
+            margin: 30px 170px 110px 170px;
+            font-size: 28px;    
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -151,6 +267,9 @@
         font-family: 'Prociono', serif;
         letter-spacing: 0.2px;
         .prix{
+            @include large{
+                font-size: 32px;
+            }
             font-size: 2.2vw;
             text-align: right;
         }
@@ -163,22 +282,49 @@
         .option3{
             color: #6e4ccc;
         }
+        @include mobile{
+            font-size: 3vw;
+            margin: (30px/$width-body)*100vw 4% (110px/$width-body)*100vw 4%;
+            .prix{
+                font-size: 3.2vw;
+            }
+        }
     }
 }
 #menudelice{
+    @include large{
+        align-content: center; 
+        margin: 28px auto 200px auto;   
+    }
     display: flex;
     flex-direction: column;
     align-content: space-between;
     background-color: $color-delice;
+    max-height: 1684px;
+    max-width: 1190px;
     height: (1684px/$width-body)*100vw;
     width: (1190px/$width-body)*100vw;
     box-shadow: 0 0 15px rgb(225, 225, 225);
     margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    @include mobile{
+        justify-items: center;
+        margin: 6% 0 6% 0;
+        width: 100%;
+        height: 100%;
+        align-content: initial;
+    }
     .debut{
+        @include large{
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
         margin-top: (150px/$width-body)*100vw;
         margin-bottom: (100px/$width-body)*100vw;
         text-align: center;
         h3{
+            @include large{
+                font-size: 75px;
+            }
             font-family: 'Dancing Script', cursive;
             font-weight: 300;
             background: linear-gradient(113deg, rgba(2,40,221,1) 25%, rgba(8,135,251,1) 67%);
@@ -186,16 +332,17 @@
             -webkit-text-fill-color: transparent;
             font-size: 6.5vw; 
         }
+        @include mobile{
+            margin-top: (250px/$width-body)*100vw;
+            margin-bottom: (200px/$width-body)*100vw;
+            h3{
+                font-size: 8vw;         
+            }
+        }
     }
     .titre{
-        img{
-            width: 32%;
-            height: auto;
-        }
-        h4{
-            font-size: 1.9vw;
-            font-family: 'SegoePrint', cursive;
-            font-weight: 500;
+        @include large{
+            margin: 10px 46px 10px 46px;
         }
         display: flex;
         flex-direction: row;
@@ -203,6 +350,27 @@
         align-items: center;
         text-align: center;
         margin: (10px/$width-body)*100vw (46px/$width-body)*100vw (10px/$width-body)*100vw (46px/$width-body)*100vw;
+        img{
+            width: 32%;
+            height: auto;
+        }
+        h4{
+            @include large{
+                font-size: 30px;
+            }
+            font-size: 1.9vw;
+            font-family: 'SegoePrint', cursive;
+            font-weight: 500;
+        }
+        @include mobile{
+            margin: auto 2% (60px/$width-body)*100vw 2%;
+            img{
+                width: 30%;
+            }
+            h4{
+                font-size: 3.2vw;
+            }
+        }
     }
     .titre1{
         img{
@@ -220,6 +388,10 @@
         }  
     }
     .plat{
+        @include large{
+            margin: 30px 170px 50px 170px;
+            font-size: 22px;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -229,25 +401,56 @@
         font-family: 'SegoePrint', cursive;
         font-weight: 500;
         .prix{
+            @include large{
+                font-size: 28px
+            }
             font-size: 2.1vw;
             text-align: right;
+        }
+        @include mobile{
+            font-size: 2.5vw;
+            margin: (30px/$width-body)*100vw 4% (110px/$width-body)*100vw 4%;
+            .prix{
+                font-size: 3.2vw;
+            }
         }
     }
 }
 #menupalette{
+    @include large{
+        align-content: center; 
+        margin: 28px auto 200px auto;   
+    }
     display: flex;
     flex-direction: column;
     align-content: space-between;
     background-color: $color-palette;
+    max-height: 1684px;
+    max-width: 1190px;
     height: (1684px/$width-body)*100vw;
     width: (1190px/$width-body)*100vw;
     box-shadow: 0 0 15px rgb(225, 225, 225);
     margin: (28px/$width-body)*100vw (162px/$width-body)*100vw (200px/$width-body)*100vw (162px/$width-body)*100vw;
+    @include mobile{
+        justify-items: center;
+        margin: auto 0 6% 0;
+        width: 100%;
+        height: 100%;
+        align-content: initial;
+        box-shadow: initial;
+    }
     .debut{
+        @include large{
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
         margin-top: (150px/$width-body)*100vw;
         margin-bottom: (100px/$width-body)*100vw;
         text-align: center;
         h3{
+            @include large{
+                font-size: 70px;
+            }
             font-family: 'Kaushan Script', cursive;
             background: linear-gradient(113deg, rgba(65,150,60,1) 17%, rgba(184,250,124,1) 59%); 
             -webkit-background-clip: text;
@@ -255,16 +458,17 @@
             font-size: 6vw;
             font-weight: 400;
         }
+        @include mobile{
+            margin-top: (250px/$width-body)*100vw;
+            margin-bottom: (200px/$width-body)*100vw;
+            h3{
+                font-size: 7vw;         
+            }
+        }
     }
     .titre{
-        img{
-            width: 32%;
-            height: auto;
-        }
-        h4{
-            font-size: 1.9vw;
-            font-family: 'SegoePrint', cursive;
-            font-weight: 500;
+        @include large{
+            margin: 10px 46px 10px 46px;
         }
         display: flex;
         flex-direction: row;
@@ -272,8 +476,33 @@
         align-items: center;
         text-align: center;
         margin: (10px/$width-body)*100vw (46px/$width-body)*100vw (10px/$width-body)*100vw (46px/$width-body)*100vw;
+        img{
+            width: 32%;
+            height: auto;
+        }
+        h4{
+            @include large{
+                font-size: 30px;
+            }
+            font-size: 1.9vw;
+            font-family: 'SegoePrint', cursive;
+            font-weight: 500;
+        }
+        @include mobile{
+            margin: auto 2% (60px/$width-body)*100vw 2%;
+            img{
+                width: 30%;
+            }
+            h4{
+                font-size: 3.2vw;
+            }
+        }
     }
     .plat{
+        @include large{
+            margin: 30px 135px 50px 135px;
+            font-size: 22px;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -283,8 +512,18 @@
         font-family: 'SegoePrint', cursive;
         font-weight: 500;
         .prix{
+            @include large{
+                font-size: 27px;
+            }
             font-size: 2.1vw;
             text-align: right;
+        }
+        @include mobile{
+            font-size: 2.3vw;
+            margin: (30px/$width-body)*100vw 4% (110px/$width-body)*100vw 4%;
+            .prix{
+                font-size: 3.2vw;
+            }
         }
     }
 }
