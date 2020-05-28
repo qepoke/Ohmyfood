@@ -44,14 +44,14 @@ main{
                 font-size: 3vw;
                 @include mobile{
                     width: 55vw;
-                    font-size: 4.5vw;
+                    font-size: 6vw;
                 }
             }
             h3{
                 padding-top: 10%;
                 font-size: 3vw;
                 @include mobile{
-                    font-size: 5vw;
+                    font-size: 6vw;
                 }
             }
         }
@@ -67,8 +67,8 @@ main{
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             @include mobile{
-            font-size: 8vw;
-        }
+            font-size: 10vw;
+            }
         }
         h2{
             font-family: 'Devonshire', cursive;
@@ -95,11 +95,15 @@ main{
         -webkit-text-fill-color: transparent;
         font-size: 2vw;
         @include mobile{
-            font-size: 3.5vw;
+            width: 60vw;
+            font-size: 4.2vw;
         }
     }
     h3{
         color: #c67412;
+        @include mobile{
+            font-size: 6vw;
+        }
     }
 }
 #delice{

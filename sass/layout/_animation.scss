@@ -6,7 +6,7 @@ main{
                 opacity : 0.6;
                 font-size: 3.5vw;
                 @include mobile{
-                    font-size: 6vw;
+                    font-size: 7vw;
                 }
              } 
              &:hover h3{
@@ -14,7 +14,7 @@ main{
                 opacity : 0.6;
                 font-size: 4vw;
                 @include mobile{
-                    font-size: 6vw;
+                    font-size: 7vw;
                 }
             }
         }
@@ -28,7 +28,7 @@ main{
             font-size: 6vw;
             transform: scale(1.0);
             @include mobile{
-                font-size: 10vw;
+                font-size: 12vw;
             }
         }
     }
@@ -40,9 +40,16 @@ main{
             opacity : 0.6;
             font-size: 2.3vw;
             @include mobile{
-                font-size: 4.5vw;
+                font-size: 5vw;
             }
-         } 
+        }
+        &:hover h3{
+            transition : all 0.5s ease-in-out;
+            opacity : 0.6;
+            @include mobile{
+                font-size: 7.5vw;
+            }
+        } 
     } 
 }
 footer {

@@ -806,7 +806,7 @@ main .menu figure h2 {
 @media screen and (max-width: 500px) {
   main .menu figure h2 {
     width: 55vw;
-    font-size: 4.5vw;
+    font-size: 6vw;
   }
 }
 main .menu figure h3 {
@@ -815,7 +815,7 @@ main .menu figure h3 {
 }
 @media screen and (max-width: 500px) {
   main .menu figure h3 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
@@ -833,7 +833,7 @@ main .menu figure h3 {
 }
 @media screen and (max-width: 500px) {
   #note figure span {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 }
 #note figure h2 {
@@ -862,11 +862,17 @@ main .menu figure h3 {
 }
 @media screen and (max-width: 500px) {
   #chic h2 {
-    font-size: 3.5vw;
+    width: 60vw;
+    font-size: 4.2vw;
   }
 }
 #chic h3 {
   color: #c67412;
+}
+@media screen and (max-width: 500px) {
+  #chic h3 {
+    font-size: 6vw;
+  }
 }
 
 #delice {
@@ -1016,7 +1022,7 @@ main .menu figure:hover h2 {
 }
 @media screen and (max-width: 500px) {
   main .menu figure:hover h2 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 }
 main .menu figure:hover h3 {
@@ -1026,7 +1032,7 @@ main .menu figure:hover h3 {
 }
 @media screen and (max-width: 500px) {
   main .menu figure:hover h3 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 }
 
@@ -1038,7 +1044,7 @@ main .menu figure:hover h3 {
 }
 @media screen and (max-width: 500px) {
   #note figure:hover span {
-    font-size: 10vw;
+    font-size: 12vw;
   }
 }
 
@@ -1049,7 +1055,16 @@ main .menu figure:hover h3 {
 }
 @media screen and (max-width: 500px) {
   #chic figure:hover h2 {
-    font-size: 4.5vw;
+    font-size: 5vw;
+  }
+}
+#chic figure:hover h3 {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+}
+@media screen and (max-width: 500px) {
+  #chic figure:hover h3 {
+    font-size: 7.5vw;
   }
 }
 
